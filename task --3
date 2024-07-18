@@ -1,1 +1,16 @@
+//define the LED pin
+const int ledPin = 7; // Most Arduino boards have an LED on pin 13
 
+// Define the blink interval in milliseconds (1000ms = 1 second)
+const long interval = 1000; // Set the blink interval to 1 second
+
+void setup() {
+  pinMode(ledPin, OUTPUT); // Initialize the LED pin as an output
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);   // Turn the LED on
+  delay(interval);              // Wait for the specified interval
+  digitalWrite(ledPin, LOW);    // Turn the LED off
+  delay(interval);              // Wait for the specified interval
+}
